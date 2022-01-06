@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Nevrada";
+  src: url("../fonts/AL_Nevrada_Personal_Use_Only.ttf");
+}
+
+.app-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* scroll-snap-type: y mandatory; */
+}
+
+.dl-head {
+  height: 7.7rem;
+  font-family: "Nevrada", "Serif";
+  color: #446264;
+  font-size: 6rem;
+  margin: 0;
+  margin-top: 6rem;
+  letter-spacing: 0.02em;
+}
+
+.dl-sub {
+  font-family: "Nevrada", "Serif";
+  color: #ff717b;
+  font-size: 1.33rem;
+  margin-top: 0;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+.s1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.s2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ff717b;
+}
+
+.anim-cont {
+  margin-top: -6rem;
+  overflow: hidden;
+}
+
+@media all and (max-width: 650px) {
+  .dl-head {
+    font-size: 3rem;
+    height: 4rem;
+    margin-top: 0;
+  }
+
+  .dl-sub {
+    font-size: 0.85rem;
+    margin-bottom: 12rem;
+  }
+
+  .anim-cont {
+    width: 45rem;
+    margin-top: -14rem;
+  }
+}
+
+@media all and (min-width:650px) and (max-width:1000px) {
+    .dl-head {
+        font-size: 5rem;
+        height: 6rem;
+        margin-top: 0;
+      }
+    
+      .dl-sub {
+        font-size: 1.2rem;
+        margin-bottom: 12rem;
+      }
+    
+      .anim-cont {
+        width: 60rem;
+        margin-top: -14rem;
+      }
+}
