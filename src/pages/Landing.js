@@ -19,7 +19,7 @@ function Landing(props) {
     animationData: assembly
   }
 
-  return <div>
+  return <div className="anim-wrapper">
       <div className='anim-cont' ref={animationContainer} />
   </div>;
 }

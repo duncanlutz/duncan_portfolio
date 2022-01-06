@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Nevrada";
+    src: url("../fonts/AL_Nevrada_Personal_Use_Only.ttf");
+  }
+
+.vid-page {
+    display: flex;
+    height: 75vw;
+    width: 75vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.icon-circle {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    background-color: #446264;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.li-icon {
+    color: #F9FAF3;
+}
+
+.li-text {
+    font-family: "Nevrada", "Serif";
+    font-size: 2rem;
+    color: #446264;
+}
+
+.li-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
