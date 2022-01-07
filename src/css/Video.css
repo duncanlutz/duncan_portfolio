@@ -1,48 +1,99 @@
 @font-face {
-    font-family: "Nevrada";
-    src: url("../fonts/AL_Nevrada_Personal_Use_Only.ttf");
-  }
+  font-family: "Nevrada";
+  src: url("../fonts/AL_Nevrada_Personal_Use_Only.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
+
+.video-title {
+  font-family: "Nevrada", "Serif";
+  font-size: 2.5rem;
+  color: #ff717b;
+  align-self: center;
+  border-bottom: 3px solid #ff717b;
+  height: 4rem;
+}
 
 .vid-page {
-    display: flex;
-    height: 75vw;
-    width: 75vw;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .list-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  height: 75%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .icon-circle {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 100%;
-    background-color: #446264;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  background-color: #446264;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .li-icon {
-    color: #F9FAF3;
+  color: #f9faf3;
 }
 
 .li-text {
-    font-family: "Nevrada", "Serif";
-    font-size: 2rem;
-    color: #446264;
+  font-family: "Source Sans Pro", "Sans-Serif";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #446264;
 }
 
 .li-cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  -moz-transform: translate(0px, 50px);
+  -webkit-transform: translate(0px, 50px);
+  -o-transform: translate(0px, 50px);
+  -ms-transform: translate(0px, 50px);
+  transform: translate(0px, 50px);
+  -webkit-transition: opacity 0.5s 0s cubic-bezier(0.250, 0.460, 0.450, 0.940), transform 0.5s 0s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -moz-transition: opacity 0.5s 0s cubic-bezier(0.250, 0.460, 0.450, 0.940), transform 0.5s 0s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -o-transition: opacity 0.5s 0s cubic-bezier(0.250, 0.460, 0.450, 0.940), transform 0.5s 0s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  transition: opacity 0.5s 0s cubic-bezier(0.250, 0.460, 0.450, 0.940), transform 0.5s 0s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.li-cont.set-anim {
+  opacity: 1;
+  -moz-transform:none;
+  -webkit-transform:none;
+  -o-transform:none;
+  -ms-transform:none;
+  transform:none;
+}
+
+.example-span {
+  cursor: pointer;
+  color: #ff717b;
+}
+
+@media all and (max-width: 450px) {
+  .icon-circle {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .li-icon {
+    width: 2rem;
+  }
+
+  .li-text {
+    font-size: 1rem;
+  }
 }

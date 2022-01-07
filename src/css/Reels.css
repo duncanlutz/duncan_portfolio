@@ -1,0 +1,16 @@
+.reel-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+.program-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 75%;
+    height: 42%;
+}

@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import lottie from "lottie-web";
+import $ from 'jquery';
 import assembly from '../images/Assembly.json';
+import { useElementOnScreen } from "../hooks/DuncansHooks";
 import '../css/Landing.css';
 
 function Landing(props) {
+
     let animationContainer = React.createRef();
 
     useEffect(() => {
@@ -12,12 +15,6 @@ function Landing(props) {
             animationData: assembly
         })
     }, [])
-  var animOptions = {
-    loop: true,
-    autoplay: true,
-    prerender: true,
-    animationData: assembly
-  }
 
   return <div className="anim-wrapper">
       <div className='anim-cont' ref={animationContainer} />
