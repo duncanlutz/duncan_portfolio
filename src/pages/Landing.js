@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import lottie from "lottie-web";
-import $ from 'jquery';
 import assembly from '../images/Assembly.json';
-import { useElementOnScreen } from "../hooks/DuncansHooks";
 import '../css/Landing.css';
 
 function Landing(props) {

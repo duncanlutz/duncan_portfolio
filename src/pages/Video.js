@@ -77,7 +77,7 @@ function Video() {
           </div>
           <div className="li-text">
             Well versed at designing template files for standardized graphics
-            creation <span className="example-span">(example below).</span>
+            creation (example / further explanation below).
           </div>
         </div>
         <div className="li-cont li-five" style={{
